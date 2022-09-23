@@ -4,9 +4,9 @@ import UserContext from "./UserContext";
 
 const Authorize = ({children}) => {
 
-    const user = React.useContext(UserContext);
+    const {user} = React.useContext(UserContext);
     
-    if(user?.isLogged)
+    if(user.isLogged)
     return (
         <>
             {children}
